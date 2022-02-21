@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -24,7 +25,6 @@
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
-
       Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
@@ -46,17 +46,29 @@
     <noscript>You need to enable JavaScript to run this app.</noscript>
 
     <div id="myModal" class="modal fade">
-      <div class="modal-dialog">
-          <div class="modal-content">
-              <div class="modal-header">
-                  <h6 class="modal-title">Special Offer!!</h6>
+      <div class="modal-dialog" >
+          <div class="modal-content" style="background:lightgrey;">
+            <h1 class="modal-title" style="text-align:center; color:red;" >Special Offer!!</h1>
+              <div class="modal-header" style="text-align:center; color: rgb(0, 0, 254)">
                   <h2>Open a new BADBANK account and recieve $500 dollars</h2>
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
               </div>
-              <div class="modal-body">
-                <p></p>
-                  <p>Styling: Bootstrap, Sass, Font Awesome, CSS </p>
-                  <p>How to use this app? <br/> Start by hitting the Home Button and hover and click on the navigation buttons and the register button.</p>
+              <h6 style="text-align:center; color:green;">If <b style="font-weight:bold; font-size:1.5rem; color:grey;">X</b> doesnt work 🤷🏼‍♂️, Click outside the modal to close ❌</h6>
+              <div class="modal-body" style="background:grey; color:white; font-size:1rem;">
+                  <p style="color: purple; text-align: center" >Styling: Bootstrap, Sass, Font Awesome, CSS </p>
+                  <br />
+                  <p style="color: rgb(255, 154, 4); ">New and Extra Features:</p>
+                  <ul>
+                    <li>Promotional Popup</li>
+                    <li>Footer</li>
+                    <li>Login/Logout options</li>
+                    <li>Registration Form Validation with REGEX.</li>
+                    <li>Extra Password Confirmation</li>
+                    <li>Account Dashboard </li>
+                    <li>Monitor User and Account Activities</li>
+                  </ul>
+                  <p style="color: rgb(255, 154, 4); ">How to use this app?</p>
+                   <p>Start by hitting the Home Button and hover and click on the navigation buttons and the register button.</p>
                   <ol>
                     <li>
                       Register a new BadBank account.<br />
@@ -69,19 +81,19 @@
                     </li>
                     <br/>
                     <li>
-                      when you login : you will land on the dashboard where you get a summary of your account.<br/> Choose type of transaction  
+                      when you login : you will land on the dashboard where you get a summary of your account, last 4 digits of your account number, summary of latest transactions and account balance.<br/> Choose type of transaction.
                     </li>
                     <br/>
                     <li>
-                      Whether you choose deposit or withdraw, the form will guide you through transaction validation.
+                      Whether you choose deposit or withdraw, the form will guide you through transaction validations.
                     </li>
                     <br/>
                     <li>
-                      Check the dashboard to see a history of your transaction
+                      Check the dashboard to see a history of your transactions.
                     </li>
                     <br/>
                     <li>
-                      Check User Data to check your account information.
+                      Visit User Data to check your account information.
                     </li>
                     <br/>
                     <li>
@@ -105,5 +117,6 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+   
   </body>
 </html>
